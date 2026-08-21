@@ -1,0 +1,22 @@
+# Interview Shortlist Report
+## NexusTech Talent Acquisition
+
+Following a rigorous screening of candidate profiles against active job openings based on technical skills, experience requirements, location compatibility, and role suitability, the following candidates have been qualified and selected for the interview shortlist.
+
+### Qualified Interview Shortlist
+
+| Candidate Name | Role | Department | Match Score | Reason for Selection |
+| :--- | :--- | :--- | :---: | :--- |
+| **Arjun Patel** | Platform Engineer | Platform Engineering | 100% | Meets all mandatory technical requirements (Java, Spring Boot, Kubernetes). Exceeds experience requirement with 7 years (6 years required) and matches Pune location. Received a "Strong Hire" technical evaluation. |
+| **Rahul Sharma** | DevOps Engineer | DevOps | 100% | Full technical alignment with mandatory skills (AWS, Kubernetes, Docker, Terraform, Jenkins). Exceeds experience requirement with 6 years (5 years required) and matches Bangalore location. Received a "Hire" technical evaluation. |
+| **Priya Reddy** | AI ML Engineer | AI/ML | 100% | Complete skill alignment (Python, TensorFlow, LLM, GenAI, Vertex AI). Meets the 5-year experience requirement and Hyderabad location compatibility. Received a "Hire" technical evaluation. |
+| **Vikram Singh** | AI ML Engineer | AI/ML | 95% | Exceptionally strong AI background matching python, LLM, and platform tools. Exceeds experience requirement with 6 years (5 years required) and matches Hyderabad location. Received a "Strong Hire" technical evaluation. |
+
+---
+
+### Non-Shortlisted Candidates (Does Not Satisfy Requirements)
+
+* **Neha Verma** (Platform Engineer) - Match Score: 75%
+  * *Reason for Exclusion*: Does not meet the minimum experience requirement (has 5 years vs 6 years required) and lacks Spring Boot in her resume's tech stack.
+* **Sneha Kumar** (DevOps Engineer) - Match Score: 65%
+  * *Reason for Exclusion*: Does not meet the minimum experience requirement (has 4 years vs 5 years required) and lacks Kubernetes in her core resume's tech stack.

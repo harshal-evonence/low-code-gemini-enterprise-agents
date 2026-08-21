@@ -1,0 +1,29 @@
+2026-07-28T00:15:00.104Z INFO [Auth-Prod-04] [org.enterprise.auth.Server] Starting Authentication Microservice v4.2.1-RELEASE...
+2026-07-28T00:15:01.341Z INFO [Auth-Prod-04] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2026-07-28T00:15:02.890Z INFO [Auth-Prod-04] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed. Max connections: 150, Minimum idle: 10
+2026-07-28T00:15:03.011Z INFO [Auth-Prod-04] [org.enterprise.auth.Server] Server listening on port 8080. Health check endpoint: /health
+2026-07-28T00:20:00.000Z INFO [Auth-Prod-04] [org.enterprise.auth.controllers.HealthCheck] Healthcheck OK - Connection active: true. Latency: 12ms.
+2026-07-28T00:25:00.000Z INFO [Auth-Prod-04] [org.enterprise.auth.controllers.HealthCheck] Healthcheck OK - Connection active: true. Latency: 15ms.
+2026-07-28T00:28:10.512Z INFO [Auth-Prod-04] [org.enterprise.auth.filters.RequestTracker] Shift-Change Surge Triggered: Incoming login requests spiked from 25 req/sec to 480 req/sec.
+2026-07-28T00:28:30.912Z WARN [Auth-Prod-04] [com.zaxxer.hikari.pool.ProxyConnection] HikariPool-1 - Connection pool utilization has exceeded 90%. Active connections: 136, Idle: 14.
+2026-07-28T00:29:05.412Z WARN [Auth-Prod-04] [com.zaxxer.hikari.pool.ProxyConnection] HikariPool-1 - Connection pool saturation imminent. Active connections: 150, Idle: 0, Pending threads: 45.
+2026-07-28T00:29:15.890Z WARN [Auth-Prod-04] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Connection acquisition is slow. Average wait time: 4200ms.
+2026-07-28T00:29:30.902Z ERROR [Auth-Prod-04] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Connection is not available, request timed out after 15000ms. Active: 150, Pending: 98.
+2026-07-28T00:29:30.903Z ERROR [Auth-Prod-04] [org.enterprise.auth.exceptions.GlobalExceptionHandler] Uncaught exception: org.postgresql.util.PSQLException: FATAL: remaining connection slots are reserved for non-replication superuser connections
+2026-07-28T00:29:31.112Z INFO [Auth-Prod-04] [org.enterprise.auth.filters.RequestTracker] Outgoing HTTP Response - Path: /v1/login - Status: 504 Gateway Timeout - Latency: 15003ms.
+2026-07-28T00:29:45.002Z ERROR [Auth-Prod-04] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Connection is not available, request timed out after 15000ms. Active: 150, Pending: 142.
+2026-07-28T00:29:45.105Z INFO [Auth-Prod-04] [org.enterprise.auth.filters.RequestTracker] Outgoing HTTP Response - Path: /v1/login - Status: 504 Gateway Timeout - Latency: 15001ms.
+2026-07-28T00:30:00.000Z ERROR [Auth-Prod-04] [org.enterprise.auth.controllers.HealthCheck] Healthcheck FAILED - Database connection timeout.
+2026-07-28T00:30:15.420Z ERROR [Auth-Prod-04] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Connection is not available, request timed out after 15000ms. Active: 150, Pending: 184.
+2026-07-28T00:30:15.552Z INFO [Auth-Prod-04] [org.enterprise.auth.filters.RequestTracker] Outgoing HTTP Response - Path: /v1/login - Status: 504 Gateway Timeout - Latency: 15002ms.
+2026-07-28T01:03:15.000Z INFO [Auth-Prod-04] [org.enterprise.auth.commands.AdminShell] Remote Admin command received: /opt/scripts/flush_pool.sh --force --pool=auth-pool-04
+2026-07-28T01:03:16.120Z INFO [Auth-Prod-04] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Hard shutdown requested...
+2026-07-28T01:03:17.340Z INFO [Auth-Prod-04] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2026-07-28T01:04:00.010Z INFO [Auth-Prod-04] [org.enterprise.auth.commands.AdminShell] Remote Admin config update: File `/etc/db/auth-config.json` updated. Key `max_connections` set to `300`.
+2026-07-28T01:05:00.220Z INFO [Auth-Prod-04] [org.enterprise.auth.Server] Service restart triggered by systemd (auth-service.service).
+2026-07-28T01:05:01.104Z INFO [Auth-Prod-04] [org.enterprise.auth.Server] Starting Authentication Microservice v4.2.1-RELEASE...
+2026-07-28T01:05:01.990Z INFO [Auth-Prod-04] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2026-07-28T01:05:02.812Z INFO [Auth-Prod-04] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed. Max connections: 300, Minimum idle: 15
+2026-07-28T01:05:03.011Z INFO [Auth-Prod-04] [org.enterprise.auth.Server] Server listening on port 8080. Health check endpoint: /health
+2026-07-28T01:05:15.000Z INFO [Auth-Prod-04] [org.enterprise.auth.controllers.HealthCheck] Healthcheck OK - Connection active: true. Latency: 25ms.
+2026-07-28T01:10:00.000Z INFO [Auth-Prod-04] [org.enterprise.auth.controllers.HealthCheck] Healthcheck OK - Connection active: true. Latency: 8ms.
